@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+::root {
+    --bgPrimary: #cccfff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebecfe;
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    position: absolute;
+    top: 20%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    line-height: 2rem;
+    width: 25rem;
+    height: 40rem;
+    padding-bottom: 100px;
+    background: white;
+}
+
+.card .layoutCard img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.card .layoutCard .content {
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+
+.card .layoutCard .content h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.card .layoutCard .content p {
+    color: #929394;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Musik */
+.card .musik {
+    margin: auto;
+    background-color: #eae8ec;
+    padding: 1rem 1rem;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.card .musik .contenMusik {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card .musik .contenMusik .left {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    line-height: 1.6rem;
+}
+
+.card .musik .contenMusik .left img {
+    width: 60px;
+}
+
+.card .musik .contenMusik .contenMusikdeskripsi p {
+    color: #929394;
+    font-weight: 700;
+}
+
+
+.card .musik .contenMusik span {
+    color: #9B5DE0;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+
+.card .layoutCard .layoutButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.card .layoutCard .layoutButton .btn-payments {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    background-color: #9FA1FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all;
+}
+
+.card .layoutCard .layoutButton .btn-cancel {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all;
+}
+
+.card .layoutCard .layoutButton .btn-payments:hover {
+    box-shadow: 3px 3px 2px 2px #9FA1FF;
+    transition: 0.3s;
+}
+
+/* end musik */
+
+@media (max-width : 648px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ebecfe;
+        background-image: url('/images/pattern-background-mobile.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
